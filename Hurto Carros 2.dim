@@ -1,0 +1,181 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ff4fd33b-bc7a-44ac-95b9-ec18efaa7a4a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hurto Carros</ID>
+  <Name>Hurto Carros</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3b6b4b0f-340d-473f-a274-8da19c3c6b9d">
+    <DataSourceViewID>DH Hvehiculo</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="454a3b88-354a-4d3c-9f24-48f96ddafc24">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="6bfd8567-d4fb-4b7b-93de-9f404a51a164">
+      <ID>Idfecha</ID>
+      <Name>Idfecha</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18471899-2df4-4a9f-95e3-df8f0e82e662">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04084813-9f5e-48df-af19-5b5ac0279336">
+            <TableID>dbo_Hurto_carros</TableID>
+            <ColumnID>idfecha</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4b4922af-fc45-40d4-bb9d-1ed69c293b16">
+          <AttributeID>Idubicacion</AttributeID>
+          <Name>Idubicacion</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4967e921-c052-487a-8b92-d021d64194dd">
+          <AttributeID>Idbien</AttributeID>
+          <Name>Idbien</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6fbc2b67-3cb6-475f-a868-0e405ce4afdc">
+          <AttributeID>Idsede</AttributeID>
+          <Name>Idsede</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f73f69cf-e6c9-4bff-af40-d655a34ea781">
+          <AttributeID>Idmodalidad</AttributeID>
+          <Name>Idmodalidad</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b56891a7-b259-4466-813f-d29799d61003">
+          <AttributeID>Idsexo</AttributeID>
+          <Name>Idsexo</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="55e80c9c-7cbe-4a42-b3f8-685334ba91e6">
+      <ID>Idubicacion</ID>
+      <Name>Idubicacion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c0800964-2710-4004-bbc3-0def601110ad">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="552295d3-134d-4f5b-92d4-5fe7acd6706c">
+            <TableID>dbo_Hurto_carros</TableID>
+            <ColumnID>idubicacion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cb307543-d8e4-4187-93da-21f23dfe8a29">
+      <ID>Idbien</ID>
+      <Name>Idbien</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="48731502-c04f-4c26-8d0d-58437481b03c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="967dedfd-487c-44ad-8196-97ef3f4165a3">
+            <TableID>dbo_Hurto_carros</TableID>
+            <ColumnID>idbien</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c77dbb1b-4999-49c3-9639-677ec8c1c868">
+      <ID>Idsede</ID>
+      <Name>Idsede</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1cb3de65-09b1-47ed-896f-b8391e94fe91">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86aecbdd-3177-49ec-bcd6-0ea91cbd8150">
+            <TableID>dbo_Hurto_carros</TableID>
+            <ColumnID>idsede</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53b30ad4-40f6-47ad-a55d-c3ff2e275254">
+      <ID>Idmodalidad</ID>
+      <Name>Idmodalidad</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9bcd26c4-9e78-4ede-a8d5-8fd01fcf372e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35720609-ff8c-4295-85e6-97e252ec9541">
+            <TableID>dbo_Hurto_carros</TableID>
+            <ColumnID>idmodalidad</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0119f36-3a1e-41c2-935b-6c56fb6fbda4">
+      <ID>Idsexo</ID>
+      <Name>Idsexo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2d74c905-1828-48a6-a427-a2f47daaca27">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="25585527-29d8-439e-86a8-fd389400d975">
+            <TableID>dbo_Hurto_carros</TableID>
+            <ColumnID>idsexo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

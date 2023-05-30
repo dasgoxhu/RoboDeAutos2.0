@@ -1,0 +1,295 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1fd6403d-6dfb-4bc5-94e7-fa3460e6cc18" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DH Hvehiculo</ID>
+  <Name>DH Hvehiculo</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a57af3b6-dd1f-4651-8139-a79d014129b4">
+      <ID>Hurto Carros</ID>
+      <Name>Hurto Carros</Name>
+      <DimensionID>Hurto Carros</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6b682398-bdbd-4ba7-82cb-16f39fceb281">
+          <AttributeID>Idfecha</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="271f203f-f63f-4597-b24e-f45b7773394b">
+          <AttributeID>Idubicacion</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d03e9836-b92a-4011-a233-4e7b0d45a125">
+          <AttributeID>Idbien</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="78e22bc7-3235-49ae-851f-8c24c6ed63e3">
+          <AttributeID>Idsede</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1656ea2d-3aa5-4eb0-b466-f8b11fc06beb">
+          <AttributeID>Idmodalidad</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0fe76fed-bb66-4882-a125-b7af7e8155ba">
+          <AttributeID>Idsexo</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="54eb07f3-eb9f-4bc8-83b4-855808628726">
+      <ID>Ubicacion</ID>
+      <Name>Ubicacion</Name>
+      <DimensionID>Ubicacion</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ee3a3a63-73b3-425c-b5ec-13688d972184">
+          <AttributeID>Idubicacion</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="082d6e6a-7b13-4a6b-ba48-6c5d293f445d">
+      <ID>Vehiculo</ID>
+      <Name>Vehiculo</Name>
+      <DimensionID>Vehiculo</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a21fc604-8237-44af-b7be-aec3d5de01d3">
+          <AttributeID>Idbien</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2b732f82-31f1-4b41-af5b-5b6e20c5774c">
+      <ID>Recepcion</ID>
+      <Name>Recepcion</Name>
+      <DimensionID>Recepcion</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f0efe36b-f8a7-482b-bf5d-27b68b8bcb6b">
+          <AttributeID>Idsede</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="39f40938-a7ca-4580-87ec-670002df2e93">
+      <ID>Fechas</ID>
+      <Name>Fechas</Name>
+      <DimensionID>Fechas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d427df98-fe67-429a-9289-93afaf5b6802">
+          <AttributeID>Idfecha</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5059ce9a-4a43-4004-88ef-55bbb5fde6ef">
+      <ID>Modalidad</ID>
+      <Name>Modalidad</Name>
+      <DimensionID>Modalidad</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b33c810a-9cb4-4e69-9117-88d08ff8691d">
+          <AttributeID>Idmodalidad</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="56f114d6-fdcf-4c64-a0f0-e198a5826d48">
+      <ID>Persona</ID>
+      <Name>Persona</Name>
+      <DimensionID>Persona</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5fb5bb0e-fdfc-4008-8e96-f262465dd241">
+          <AttributeID>Idsexo</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="d1f5383a-9bd0-4278-899c-61ee79d8b8ca">
+      <ID>Hurto Carros</ID>
+      <Name>Hurto Carros</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="044dd452-135e-43f5-bd5f-90125cf89160">
+          <ID>Recuento Hurto Carros</ID>
+          <Name>Recuento Hurto Carros</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9b382b8d-90df-423a-a79f-2763cc848bb7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9d167a84-38b7-444f-9476-87c47ed8f56b">
+              <TableID>dbo_Hurto_carros</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="8e180f4e-2012-4a36-b361-03d162960acd">
+          <CubeDimensionID>Hurto Carros</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7a93f015-a439-4a7b-93f0-a53c7f77fe7d">
+              <AttributeID>Idfecha</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dbdb1eb6-41bb-4b1f-948f-cdc2e017d6c7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4cbf4d9f-1e1b-4157-adff-ed36afdf394f">
+                    <TableID>dbo_Hurto_carros</TableID>
+                    <ColumnID>idfecha</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="689bd21b-71df-4f3f-bcad-c2589ec116d7">
+          <CubeDimensionID>Ubicacion</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="277fa440-c15d-48c3-b6d0-9cbddaf9eb3f">
+              <AttributeID>Idubicacion</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="35171482-6f9a-4c16-afdd-63cab68e2875">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="90d72122-d07f-42fb-88b3-92b81f4b2446">
+                    <TableID>dbo_Hurto_carros</TableID>
+                    <ColumnID>idubicacion</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b5f049da-227b-4428-904a-1e6c4b076300">
+          <CubeDimensionID>Vehiculo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c73bfa71-5c8a-480a-b4af-b1f498601271">
+              <AttributeID>Idbien</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ae9b97ad-b3de-4e62-bcc7-5d14a2f02c92">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ff63614d-572a-4e4c-8664-d51d04be957d">
+                    <TableID>dbo_Hurto_carros</TableID>
+                    <ColumnID>idbien</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e315966d-9a23-4d05-b33f-3bc4b9bc7016">
+          <CubeDimensionID>Recepcion</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="62757016-8f77-4887-9638-0815138b1e62">
+              <AttributeID>Idsede</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="05b90910-3cc9-4708-b6c3-2e1bf69c3553">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e6e12b86-44a7-4779-802a-22bec40871cf">
+                    <TableID>dbo_Hurto_carros</TableID>
+                    <ColumnID>idsede</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2b0f15a0-748c-4e9d-bc54-8be0cc05e18f">
+          <CubeDimensionID>Fechas</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="03ab871c-ea08-4265-9490-79805ec46f4f">
+              <AttributeID>Idfecha</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="241af784-0fa7-4a63-9dbc-3e5f78d24934">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e320c72a-dc59-42a1-911a-00b2a2a6a676">
+                    <TableID>dbo_Hurto_carros</TableID>
+                    <ColumnID>idfecha</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="de54ecab-68bf-4298-a832-de541ed13f07">
+          <CubeDimensionID>Modalidad</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e029bce0-6c01-4a08-9142-4a18699f9551">
+              <AttributeID>Idmodalidad</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ceb13c7b-919d-462e-b293-e2106ef79f65">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7ec5c2ec-4731-4f38-ae35-b22e1487c8dc">
+                    <TableID>dbo_Hurto_carros</TableID>
+                    <ColumnID>idmodalidad</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="58b20016-5f17-4344-9365-6fe05470aaba">
+          <CubeDimensionID>Persona</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f74bb0ce-3ed3-4fea-85c5-c0634ceb4b8b">
+              <AttributeID>Idsexo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="74b5c1f8-3c0a-4caf-83de-36f174d0a217">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ea13a704-6b1f-4313-9851-ffaaae0ad8a4">
+                    <TableID>dbo_Hurto_carros</TableID>
+                    <ColumnID>idsexo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="9dcaeec1-f6eb-45fe-b698-03e1f7b4a4ac">
+    <DataSourceViewID>DH Hvehiculo</DataSourceViewID>
+  </Source>
+</Cube>
